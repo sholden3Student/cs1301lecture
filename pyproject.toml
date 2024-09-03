@@ -1,0 +1,23 @@
+[project]
+name = "intro_cs_python"
+version = "0.0.1"
+description = "Intro python class"
+authors = [{name="Wes Holden", email="wesholden1992@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "jupyterlab==4.1.0",
+    "pyodbc==5.1.0",
+    "pandas==2.2.0",
+    "pyarrow==15.0.0",
+    "sqlalchemy==2.0.31",
+    "pytest==8.2.2",
+    "flake8==7.1.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
